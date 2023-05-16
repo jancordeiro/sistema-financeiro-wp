@@ -1,2 +1,15 @@
-# sistema-financeiro-wp
-Sistema Financeiro em Wordpress
+# Sistema Financeiro WP
+---
+Um Sistema Financeiro simples para cadastro de contas a pagar e a receber feito em Wordpress.
+
+Funções:
+- Usuários podem se cadastrar;
+- Usuários cadastrados podem cadastrar contas a pagar e a receber;
+- Usuários cadastrados podem editar ou deletar suas contas cadastradas;
+- Usuários podem visualizar apenas as suas contas cadastradas;
+
+Plugins usados:
+1) ACF (Advanced Custom Fields)
+2) CPT UI (Custom Post Type)
+3) Frontend Admin
+4) Elementor
