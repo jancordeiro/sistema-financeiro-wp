@@ -1,3 +1,6 @@
+<?php
+// REMOVER DESSA LINHA PARA CIMA PARA RETIRAR A TAG <?php AO ADICIONAR NO ARQUIVO 'functions.php' no seu WordPress 
+
 /* 
  * SCRIPT PRA CRIAR SHORTCODE's E FILTRO DE POSTAGENS
  * 
@@ -52,3 +55,24 @@ function register_custom_shortcodes() {
 add_action('init', 'register_custom_shortcodes');
 
 // FIM DO SCRIPT QUE CRIA SHORTCODEs E FILTRO DE POSTAGEM
+
+/*
+ * VERIFICAR SE ESTA LOGADO E REDIRECIONA
+ * A função 'is_page' verifica se está logado para acessar as páginas;
+ * Se não estiver logado, é redirecionado pra home. 
+ */
+
+function restrict_dashboard_access() {
+    // Verifica se a página atual é a "dashboard", "nova-conta-a-pagar" ou "nova-conta-a-receber"
+    if (is_page('dashboard') || is_page('nova-conta-a-pagar') || is_page('nova-conta-a-receber')) {
+        // Verifica se o usuário não está logado
+        if (!is_user_logged_in()) {
+            // Redireciona para a página inicial
+            wp_redirect(home_url());
+            exit;
+        }
+    }
+}
+add_action('template_redirect', 'restrict_dashboard_access');
+
+// FIM DO SCRIPT DA VERIFICAÇÃO DE LOGIN
