@@ -1,0 +1,44 @@
+/*
+ * Estilo para classe dos post_types:
+ * [contas_a_pagar] e [contas_a_receber]
+ */
+
+.shortcode ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+.shortcode li:hover {
+    background-color: #212121;
+}
+
+.shortcode a {
+    text-decoration: none;
+    color: #61CE70;
+}
+
+.shortcode a:hover {
+    color: #6EC1E4;
+}
+
+/*
+ * Estilo para classe do botão:
+ * [logout_button]
+ */
+
+.logout-button {
+    text-align: center;
+}
+
+a.logout-btn {
+    padding: 10px;
+    border-radius: 8px;
+    background-color: red;
+    text-decoration: none;
+    color: #fff;
+}
+
+a.logout-btn:hover {
+    color: #fff;
+    background-color: #000;
+}
