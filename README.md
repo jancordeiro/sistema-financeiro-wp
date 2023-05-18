@@ -13,3 +13,5 @@ Plugins usados:
 2) CPT UI (Custom Post Type)
 3) Frontend Admin
 4) Elementor
+
+Os scripts usando em functions.php estão na pasta "functions".
