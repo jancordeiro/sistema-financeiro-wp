@@ -7,6 +7,7 @@ Funções:
 - Usuários cadastrados podem cadastrar contas a pagar e a receber;
 - Usuários cadastrados podem editar ou deletar suas contas cadastradas;
 - Usuários podem visualizar apenas as suas contas cadastradas;
+- Somente usuários logados podem acessar páginas como 'dashboard' e outras páginas de ações.
 
 Plugins usados:
 1) ACF (Advanced Custom Fields)
