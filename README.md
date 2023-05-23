@@ -16,3 +16,6 @@ Plugins usados:
 4) Elementor
 
 Os scripts usando em functions.php estão na pasta "functions".
+
+Atualizações:
+23/05/2023 - Atualizado página modelo de cada conta.
