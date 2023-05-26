@@ -13,7 +13,11 @@ function restrict_pages_access() {
             // Redireciona para a página inicial
             wp_redirect(home_url());
             exit;
-        }
+        } else {
+        // Redireciona o usuário para a página "dashboard" se estiver logado
+        wp_redirect('dashboard');
+        exit;
+		}
     }
 }
 add_action('template_redirect', 'restrict_pages_access');
