@@ -1,4 +1,4 @@
-# Sistema Financeiro WP
+# Sistema Financeiro WP :bar_chart:
 ---
 Um Sistema Financeiro simples para cadastro de contas a pagar e a receber feito em Wordpress.
 
